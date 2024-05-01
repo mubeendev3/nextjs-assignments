@@ -25,7 +25,7 @@ const FaqCard = () => {
         </span>
         <div>
           <h1 className="font-bold">
-            Why should I come maybe it's waste of time?
+            Why should I come maybe it&apos;s waste of time?
           </h1>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet

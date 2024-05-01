@@ -13,7 +13,7 @@ const HomePage = () => {
           <p className="text-gray-400 text-4xl font-light">Web Developer</p>
           <button className="text-black bg-customYellow py-2 px-6 rounded-full">
             <Link href="https://github.com/mubeendev3" target="_blank">
-              Checkout My Github
+              Checkout My Github&apos;
             </Link>
           </button>
         </div>
