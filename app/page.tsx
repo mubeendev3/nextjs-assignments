@@ -5,9 +5,9 @@ const HomePage = () => {
   return (
     <div className="flex h-screen">
       <div className="content-section w-[55%] bg-customBlue ">
-        <div className="flex flex-col gap-5 items-center justify-center h-screen">
+        <div className="flex flex-col items-center justify-center h-screen">
           <div>
-            <p className="text-yellow-300 text-3xl pb-4">Hello, I'm</p>
+            <p className="text-yellow-500 text-3xl pb-4">Hello, I'm</p>
             <h1 className="text-white text-[100px] font-bold leading-[95px] pb-4">
               Mubeen
             </h1>
@@ -17,7 +17,7 @@ const HomePage = () => {
             <p className="text-gray-400 text-4xl font-light pb-4">
               Web Developer
             </p>
-            <button className="text-black bg-customYellow py-2 px-6 rounded-full mt-5">
+            <button className="text-black bg-yellow-500 py-2 px-6 rounded-full mt-5 font-medium">
               <Link href="https://github.com/mubeendev3" target="_blank">
                 Checkout My Github&apos;
               </Link>
