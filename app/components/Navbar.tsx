@@ -1,6 +1,14 @@
+"use client";
 import Link from "next/link";
+import { useState } from "react";
 
 const Navbar = () => {
+  const [showDropdown, setShowDropdown] = useState(false);
+
+  const toggleDropdown = () => {
+    setShowDropdown(!showDropdown);
+  };
+
   return (
     <div>
       <div className="wrapper flex backdrop-blur-sm bg-customBlue h-[80px] items-center w-full justify-between font-semibold text-white shadow-xl">
@@ -15,8 +23,43 @@ const Navbar = () => {
             <li>
               <Link href="/assignment-1">Assignment 1</Link>
             </li>
-            <li>
-              <Link href="/assignment-2">Assignment 2</Link>
+            <li
+              onMouseEnter={toggleDropdown}
+              onMouseLeave={toggleDropdown}
+              className="relative"
+            >
+              <a className="cursor-pointer">Assignment 2 &#9662;</a>
+              {showDropdown && (
+                <ul className="absolute top-full left-0 bg-white shadow-lg rounded-md mt-1 py-1 w-28 px-2 text-black">
+                  <li>
+                    <Link href="/assignment-2/button">Button</Link>
+                  </li>
+                  <li>
+                    <Link href="/assignment-2/accord">Accord</Link>
+                  </li>
+                  <li>
+                    <Link href="/assignment-2/alert">Alert</Link>
+                  </li>
+                  <li>
+                    <Link href="/assignment-2/calendar">Calendar</Link>
+                  </li>
+                  <li>
+                    <Link href="/assignment-2/carousel">Carousel</Link>
+                  </li>
+                  <li>
+                    <Link href="/assignment-2/drawer">Drawer</Link>
+                  </li>
+                  <li>
+                    <Link href="/assignment-2/slider">Slider</Link>
+                  </li>
+                  <li>
+                    <Link href="/assignment-2/toast">Toast</Link>
+                  </li>
+                  <li>
+                    <Link href="/assignment-2/calendar">Calendar</Link>
+                  </li>
+                </ul>
+              )}
             </li>
             <li>
               <Link href="/assignment-3">Assignment 3</Link>
