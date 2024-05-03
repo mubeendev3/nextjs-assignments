@@ -5,6 +5,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import Image from "next/image";
 
 const Page = () => {
   return (
@@ -12,16 +13,30 @@ const Page = () => {
       <Carousel className="bg-white h-56 w-56">
         <CarouselContent>
           <CarouselItem>
-            <img src="/1.jpg" alt="Mubeen" className="h-56 w-56 object-cover" />
+            <Image
+              src="/1.jpg"
+              alt="Mubeen"
+              className="h-56 w-56 object-cover"
+              height={400}
+              width={400}
+            />
           </CarouselItem>
           <CarouselItem>
-            <img src="/2.jpg" alt="Mateen" className="h-56 w-56 object-cover" />
+            <Image
+              src="/2.jpg"
+              alt="Mateen"
+              className="h-56 w-56 object-cover"
+              height={400}
+              width={400}
+            />
           </CarouselItem>
           <CarouselItem>
-            <img
+            <Image
               src="/3.jpg"
               alt="Tehseen"
               className="h-56 w-56 object-cover"
+              height={400}
+              width={400}
             />
           </CarouselItem>
         </CarouselContent>

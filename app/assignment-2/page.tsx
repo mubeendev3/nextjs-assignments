@@ -1,8 +1,8 @@
 import { Button } from "@/components/ui/button";
 import React from "react";
 
-const page = () => {
+const Page = () => {
   return <div>Assignment 2 Page</div>;
 };
 
-export default page;
+export default Page;

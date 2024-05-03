@@ -2,7 +2,7 @@
 import { Calendar } from "@/components/ui/calendar";
 import { useState } from "react";
 
-const page = () => {
+const Page = () => {
   const [date, setDate] = useState<Date | undefined>(new Date());
   return (
     <div className="h-5/6 w-screen flex justify-center items-center ">
@@ -16,4 +16,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
